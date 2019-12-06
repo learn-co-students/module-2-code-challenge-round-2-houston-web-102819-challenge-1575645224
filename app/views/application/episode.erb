@@ -1,0 +1,10 @@
+<h1> Episode#<%= @episode.id%> </h1>
+<h2><%= @episode.date %></h2>
+<div>
+<h3><%= @episode.number  %></h3>
+</div>
+<div>
+<% @episode.guests.each do | guest | %>
+<h3><%=guest.name %></h3>
+<%end%>
+</div>
